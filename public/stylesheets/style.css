@@ -1,0 +1,204 @@
+body {
+  font-family: "Calibri",Arial Narrow,Arial,sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#container {
+  border-right: solid 1px #acacac;
+  border-left: solid 1px #acacac;
+}
+
+#header {
+  float: left;
+  height: 100px;
+  border-bottom: solid 1px #acacac;
+  width: 100%;
+  background: #888;
+  color: #fff;
+}
+
+#header a {
+  color: #fff;
+}
+
+#head {
+  width: 70%;
+  display: inline;
+  float: left;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 1%;
+}
+
+#footer {
+  width: 100%;
+  border-top: solid 1px #acacac;
+  float: left;
+  background: #888;
+  color: #fff;
+  padding-bottom: 2%;
+}
+
+#links {
+  margin-top: 20px;
+  margin-left: 20%;
+  width: 80%; 
+  float: left;
+}
+
+#footer span {
+  color: #fff;
+}
+
+#footer a.foot-link {
+  text-decoration: underline;
+  color: #444;
+}
+
+.table-head {
+  width: 98%;
+  margin-left: 1%;
+  border-bottom: solid 1px #acacac;
+  margin-bottom: 1%;
+  float: left;
+}
+
+.table-head h1 {
+  color: #2cafe3;
+  float: left;
+  width: 85%;
+  height: 30px;
+}
+
+.table-head span {
+  float: left;
+  color: green;
+  padding-bottom: 1%;
+  width: 100%;
+}
+
+.table-head a {
+  width: 10%;
+  float: left;
+  margin-top: 2%;
+}
+
+#footer #links a {
+  width: 20%;
+  text-decoration: underline;
+  border-right: solid 1px #ccc;
+  float: left;
+  text-align: center;
+  color: #fff;
+}
+
+#main {
+  width: 100%;
+  height: 800px;
+  float: left;
+  margin-top: 2%;
+}
+
+#search input{
+  width: 300px;
+  margin-top: 2%;
+  float: right;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.caption {
+  font-size: 18px; 
+  color: #ddd;
+}
+
+.links {
+  float:right; 
+  margin-top:20px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+#copyright {
+  color: #fff;
+  float: left;
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+.req {
+  color: #ff0000;
+  margin-left: 1%; 
+}
+
+#prod-table {
+  float: left;
+  width: 100%;
+}
+
+.edit-delete span {
+  margin-left: 10px;
+}
+
+.sort-false { 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;	
+  border-bottom: 5px solid black;
+}
+
+.sort-true {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;	
+  border-top: 5px solid black;
+}
+
+#prod-details-view {
+  float: left;
+  width: 100%;
+}
+
+.prod-detail-rows {
+  width: 90%;
+  height: 30px;
+  margin-left: 2%;
+  float: left;
+  margin-top: 1%;
+}
+
+.col1 {
+  width: 20%;
+  float: left;
+}
+
+.col2 {
+  width: 80%;
+  float: left;
+}
+
+.col2 span {
+  color: #006600;
+  margin-left: 2%;
+}
+
+.col2 input {
+  margin-left: 2%;
+}
+
+.left-buffer {
+  margin-left: 2%;
+} 
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.top-buffer { 
+  margin-top:20px; 
+}

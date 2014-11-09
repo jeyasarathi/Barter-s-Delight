@@ -1,0 +1,45 @@
+<edit-head></edit-head>
+<form class="form-inline" role="form">
+  <div id="prod-details-view">
+  <div class="prod-detail-rows">
+    <div class="col1"><label>Product Name</label></div>
+    <div class="col2">: <input name="productName" class="form-control" type="text" data-ng-model="details.productName"/></div>
+    <div style="clear:both"></div>
+  </div>
+  <div class="prod-detail-rows">
+    <div class="col1"><label>Vendor</label></div>
+    <div class="col2">: <input name="vendor" class="form-control" type="text" data-ng-model="details.vendor"/></div>
+    <div style="clear:both"></div>
+  </div>
+  <div class="prod-detail-rows">
+    <div class="col1"><label>Type</label></div>
+    <div class="col2">: <input name="type" class="form-control" type="text" data-ng-model="details.type"/></div>
+    <div style="clear:both"></div>
+  </div>
+  <div class="prod-detail-rows">
+    <div class="col1"><label>Cost Price in $</label></div>
+    <div class="col2">: <input name="costPrice" class="form-control" type="number" min="40" max="200" step="5" data-ng-model="details.costPrice"/></div>
+    <div style="clear:both"></div>
+  </div>
+  <div class="prod-detail-rows">
+    <div class="col1"><label>MRP in $</label></div>
+    <div class="col2">: <input name="mrp" class="form-control" type="number" min="80" max="240" step="5"  data-ng-model="details.mrp"/></div>
+    <div style="clear:both"></div>
+  </div>
+  <div class="prod-detail-rows">
+    <div class="col1"><label>Quantity</label></div>
+    <div class="col2">: 
+      <select data-ng-model="details.quantity" class="form-control left-buffer">
+        <option data-ng-selected="num == details.quantity" data-ng-repeat="num in [] | range:40">{{num}}</option>
+      </select>
+    </div>
+  <div style="clear:both"></div>
+  </div>
+  <div class="form-group row top-buffer">
+    <div class="col-sm-offset-4 col-sm-10">
+      <button type="submit" class="btn btn-primary" data-ng-click="updateDetails()">Confirm</button>
+      <a class="col-sm-offset-2" href="index.html"><button type="submit" class="btn btn-primary">Back</button></a>
+    </div>
+  </div>
+  </div>
+</form>

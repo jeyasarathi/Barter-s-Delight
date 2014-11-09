@@ -1,0 +1,43 @@
+<div class="table-head">
+  <h1>Product Details</h1>
+</div>
+<div id="prod-details-view">
+<div class="prod-detail-rows">
+  <div class="col1"><label>Product Id</label></div>
+  <div class="col2">: <span>{{details.productId}}</span></div>
+  <div style="clear:both"></div>
+</div>
+<div class="prod-detail-rows">
+  <div class="col1"><label>Product Name</label></div>
+  <div class="col2">: <span>{{details.productName}}</span></div>
+  <div style="clear:both"></div>
+</div>
+<div class="prod-detail-rows">
+  <div class="col1"><label>Vendor</label></div>
+  <div class="col2">: <span>{{details.vendor}}</span></div>
+  <div style="clear:both"></div>
+</div>
+<div class="prod-detail-rows">
+  <div class="col1"><label>Type</label></div>
+  <div class="col2">: <span>{{details.type}}</span></div>
+  <div style="clear:both"></div>
+</div>
+<div class="prod-detail-rows">
+  <div class="col1"><label>Cost Price</label></div>
+  <div class="col2">: <span>{{details.costPrice | currency}}</span></div>
+  <div style="clear:both"></div>
+</div>
+<div class="prod-detail-rows">
+  <div class="col1"><label>MRP</label></div>
+  <div class="col2">: <span>{{details.mrp | currency}}</span></div>
+  <div style="clear:both"></div>
+</div>
+<div class="prod-detail-rows">
+  <div class="col1"><label>Quantity</label></div>
+  <div class="col2">: <span>{{details.quantity}}</span></div>
+  <div style="clear:both"></div>
+</div>
+<div class="col-sm-offset-1 col-sm-10">
+  <a href="index.html"><button type="submit" class="btn btn-primary">Back</button></a>
+</div>
+</div>
