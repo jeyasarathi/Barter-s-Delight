@@ -13,28 +13,12 @@
 </head>
 <body>
   <div id="container" class="container" data-ng-controller="ListController">
-    <div id="header">
-      <a href="/views/index.html">
-        <div id="head">Barter's Delight<div><span class="caption">Online trade parkland</span></div></div>
-      </a>
-      <div id="login-signup">
-        <a class="links" href="#" data-ng-click="clearLocalStorage()">Reset</a>
-        <a class="links" href="#">Sign Up</a>
-        <a class="links" href="#">Login</a>
-      </div>
-      <div id="search">
-        <input class="form-control" type="search" data-ng-model="searchName" data-ng-minlength="2" placeholder="What are you searching for ?"/>
-      </div>
-    </div>
+    <my-header></my-header><!-- Element Custom Directive to display header of the Application-->
+    <!-- Data View routed to different views of the application-->
     <div id="main" data-ng-view>
 
     </div>
-    <div id="footer">
-      <div id="links"><a>About Us</a><a>Core Values</a><a>Blog</a><a style="border: none;">Careers<a></div>
-      <div id="copyright">
-        <span>Copyright &copy 2014 <a class="foot-link">Sample</a> is powered by <a class="foot-link">Itachi Corp.</a></span>
-      </div>
-    </div>
+    <my-footer></my-footer><!-- Element Custom Directive to display footer of the Application-->
   </div>
   <script type="text/javascript" src="../javascripts/sampleAngAppModule.js"></script>
   <script type="text/javascript" src="../javascripts/directives.js"></script>

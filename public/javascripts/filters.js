@@ -1,3 +1,10 @@
+/**
+ * List of custom filters used in the product details page
+ */
+
+/**
+ * Function to change the small case string to Title Case String
+ */
 myApp.filter('titleCase', function(){
   
   var titleCaseFilter = function(input) {
@@ -11,6 +18,9 @@ myApp.filter('titleCase', function(){
 
 });
 
+/**
+ * Function to change camel case string to space separated string
+ */
 myApp.filter('camelCaseToSpaceSep', function(){
   
   var camelCaseToSpaceSepFilter = function(input) {
@@ -24,6 +34,9 @@ myApp.filter('camelCaseToSpaceSep', function(){
 
 });
 
+/**
+ * Function to return an array to specify the values in the drop down of numbers
+ */
 myApp.filter('range', function() {
 
   var rangeFilter = function(input, total) {
