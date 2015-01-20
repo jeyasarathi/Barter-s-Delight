@@ -1,50 +1,55 @@
-      <div class="table-head">
+<div data-ng-controller="listController">
+    <div class="table-head">
         <h1> {{page_title | titleCase}} </h1><a class="btn btn-primary" data-ng-href='#/add'>Add Product</a>
         <span>{{filtered.length}} records found in the table.</span>
-      </div>
-      <div id="prod-table" class="table-responsive" >        
+    </div>
+    <div id="prod-table" class="table-responsive">
         <table class="table table-striped table-hover">
-          <thead>
+            <thead>
             <th data-ng-click="changeSorting('productId')">
-              <label> Product Id </label><span data-ng-class="selectedCls('productId')"></span>
+                <label> Product Id </label><span data-ng-class="selectedCls('productId')"></span>
             </th>
             <th data-ng-click="changeSorting('productName')">
-              <label> Product Name </label><span data-ng-class="selectedCls('productName')"></span>
+                <label> Product Name </label><span data-ng-class="selectedCls('productName')"></span>
             </th>
             <th data-ng-click="changeSorting('vendor')">
-              <label> Vendor </label><span data-ng-class="selectedCls('vendor')"></span>
+                <label> Vendor </label><span data-ng-class="selectedCls('vendor')"></span>
             </th>
             <th data-ng-click="changeSorting('type')">
-              <label> Type </label><span data-ng-class="selectedCls('type')"></span>
+                <label> Type </label><span data-ng-class="selectedCls('type')"></span>
             </th>
             <th data-ng-click="changeSorting('costPrice')">
-              <label> Cost Price</label><span data-ng-class="selectedCls('costPrice')"></span>
+                <label> Cost Price</label><span data-ng-class="selectedCls('costPrice')"></span>
             </th>
             <th data-ng-click="changeSorting('mrp')">
-              <label> MRP</label><span data-ng-class="selectedCls('mrp')"></span>
+                <label> MRP</label><span data-ng-class="selectedCls('mrp')"></span>
             </th>
             <th data-ng-click="changeSorting('quantity')">
-              <label> Quantity </label><span data-ng-class="selectedCls('quantity')"></span>
+                <label> Quantity </label><span data-ng-class="selectedCls('quantity')"></span>
             </th>
             <th>
-              <label> Edit/Delete </label>
+                <label> Edit/Delete </label>
             </th>
-          </thead>
-          <tbody data-ng-show="(filtered = (products | filter:searchName | orderBy:sort.column:sort.descending))">
+            </thead>
+            <tbody data-ng-show="(filtered = (products | filter:searchName | orderBy:sort.column:sort.descending))">
             <tr data-ng-repeat="product in filtered">
-              <td>{{product.productId}}</td>
-              <td>{{product.productName}}</td>
-              <td>{{product.vendor}}</td>
-              <td>{{product.type}}</td>
-              <td>{{product.costPrice | currency}}</td>
-              <td>{{product.mrp | currency}}</td>
-              <td>{{product.quantity}}</td>
-              <td class="edit-delete">
-                <a data-ng-href='#/view/{{product.productId}}'><span class="glyphicon glyphicon-list-alt" title="View"></span></a>
-                <a data-ng-href='#/edit/{{product.productId}}'><span class="glyphicon glyphicon-pencil" title="Edit"></span></a>
-                <a data-ng-href="#" data-ng-click="remove($index)"><span class="glyphicon glyphicon-remove" title="Delete"></span></a>
-              </td>
+                <td>{{product.productId}}</td>
+                <td>{{product.productName}}</td>
+                <td>{{product.vendor}}</td>
+                <td>{{product.type}}</td>
+                <td>{{product.costPrice | currency}}</td>
+                <td>{{product.mrp | currency}}</td>
+                <td>{{product.quantity}}</td>
+                <td class="edit-delete">
+                    <a data-ng-href='#/view/{{product.productId}}'><span class="glyphicon glyphicon-list-alt"
+                                                                         title="View"></span></a>
+                    <a data-ng-href='#/edit/{{product.productId}}'><span class="glyphicon glyphicon-pencil"
+                                                                         title="Edit"></span></a>
+                    <a data-ng-href="#" data-ng-click="remove($index)"><span class="glyphicon glyphicon-remove"
+                                                                             title="Delete"></span></a>
+                </td>
             </tr>
-          </tbody>
+            </tbody>
         </table>
-      </div>
+    </div>
+</div>

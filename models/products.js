@@ -10,9 +10,15 @@ var productsSchema = new Schema({
     productName: String,
     vendor: String,
     type: String,
-    costPrice: Double,
-    mrp: Double,
-    quantity: Integer
+    costPrice: Number,
+    mrp: Number,
+    quantity: Number
 });
 
-module.exports = mongoose.model('Products', productsSchema);
+var products = mongoose.model('Products', productsSchema);
+
+products.on('error', function () {
+    console.log('\n\nDATABASE ERROR <Mongoose.Model> | <Item>: \n', arguments, '\n\n');
+});
+
+module.exports = products;

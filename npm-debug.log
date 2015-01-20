@@ -1,0 +1,566 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ 'C:\\Users\\460473\\WebstormProjects\\SampleApp',
+6 verbose install   [ 'express',
+6 verbose install     'body-parser',
+6 verbose install     'cookie-parser',
+6 verbose install     'morgan',
+6 verbose install     'serve-favicon',
+6 verbose install     'debug',
+6 verbose install     'jade',
+6 verbose install     'mongodb',
+6 verbose install     'mongoose' ] ]
+7 info preinstall SampleApp@0.0.0
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping express@~4.9.0 C:\Users\460473\WebstormProjects\SampleApp
+10 verbose already installed skipping body-parser@~1.8.1 C:\Users\460473\WebstormProjects\SampleApp
+11 verbose already installed skipping cookie-parser@~1.3.3 C:\Users\460473\WebstormProjects\SampleApp
+12 verbose already installed skipping morgan@~1.3.0 C:\Users\460473\WebstormProjects\SampleApp
+13 verbose already installed skipping serve-favicon@~2.1.3 C:\Users\460473\WebstormProjects\SampleApp
+14 verbose already installed skipping debug@~2.0.0 C:\Users\460473\WebstormProjects\SampleApp
+15 verbose already installed skipping jade@~1.6.0 C:\Users\460473\WebstormProjects\SampleApp
+16 verbose cache add [ 'mongodb@*', null ]
+17 verbose cache add name=undefined spec="mongodb@*" args=["mongodb@*",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'mongodb@*',
+18 verbose parsed url   path: 'mongodb@*',
+18 verbose parsed url   href: 'mongodb@*' }
+19 verbose cache add [ 'mongoose@*', null ]
+20 verbose cache add name=undefined spec="mongoose@*" args=["mongoose@*",null]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'mongoose@*',
+21 verbose parsed url   path: 'mongoose@*',
+21 verbose parsed url   href: 'mongoose@*' }
+22 verbose cache add name="mongodb" spec="*" args=["mongodb","*"]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: '*',
+23 verbose parsed url   path: '*',
+23 verbose parsed url   href: '*' }
+24 verbose addNamed [ 'mongodb', '*' ]
+25 verbose addNamed [ null, '*' ]
+26 verbose cache add name="mongoose" spec="*" args=["mongoose","*"]
+27 verbose parsed url { protocol: null,
+27 verbose parsed url   slashes: null,
+27 verbose parsed url   auth: null,
+27 verbose parsed url   host: null,
+27 verbose parsed url   port: null,
+27 verbose parsed url   hostname: null,
+27 verbose parsed url   hash: null,
+27 verbose parsed url   search: null,
+27 verbose parsed url   query: null,
+27 verbose parsed url   pathname: '*',
+27 verbose parsed url   path: '*',
+27 verbose parsed url   href: '*' }
+28 verbose addNamed [ 'mongoose', '*' ]
+29 verbose addNamed [ null, '*' ]
+30 silly lockFile 842f93d5-mongodb mongodb@*
+31 verbose lock mongodb@* C:\Users\460473\AppData\Roaming\npm-cache\842f93d5-mongodb.lock
+32 silly lockFile e0858070-mongoose mongoose@*
+33 verbose lock mongoose@* C:\Users\460473\AppData\Roaming\npm-cache\e0858070-mongoose.lock
+34 silly addNameRange { name: 'mongoose', range: '*', hasData: false }
+35 silly addNameRange { name: 'mongodb', range: '*', hasData: false }
+36 verbose request where is /mongoose
+37 verbose request registry https://registry.npmjs.org/
+38 verbose request id 233deeb058c8aed1
+39 verbose url raw /mongoose
+40 verbose url resolving [ 'https://registry.npmjs.org/', './mongoose' ]
+41 verbose url resolved https://registry.npmjs.org/mongoose
+42 verbose request where is https://registry.npmjs.org/mongoose
+43 info trying registry request attempt 1 at 17:20:53
+44 verbose etag "AEH2V3HE7HPOLGCKC5SFKNJ92"
+45 http GET https://registry.npmjs.org/mongoose
+46 verbose request where is /mongodb
+47 verbose request registry https://registry.npmjs.org/
+48 verbose url raw /mongodb
+49 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb' ]
+50 verbose url resolved https://registry.npmjs.org/mongodb
+51 verbose request where is https://registry.npmjs.org/mongodb
+52 info trying registry request attempt 1 at 17:20:53
+53 verbose etag "27A9D9BBJ21UJS1DT5HJEIAAI"
+54 http GET https://registry.npmjs.org/mongodb
+55 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+56 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+57 info trying registry request attempt 2 at 17:21:14
+58 verbose etag "AEH2V3HE7HPOLGCKC5SFKNJ92"
+59 http GET https://registry.npmjs.org/mongoose
+60 info trying registry request attempt 2 at 17:21:14
+61 verbose etag "27A9D9BBJ21UJS1DT5HJEIAAI"
+62 http GET https://registry.npmjs.org/mongodb
+63 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+64 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+65 info trying registry request attempt 3 at 17:22:14
+66 verbose etag "AEH2V3HE7HPOLGCKC5SFKNJ92"
+67 http GET https://registry.npmjs.org/mongoose
+68 info trying registry request attempt 3 at 17:22:14
+69 verbose etag "27A9D9BBJ21UJS1DT5HJEIAAI"
+70 http GET https://registry.npmjs.org/mongodb
+71 silly registry.get cb [ 304, undefined ]
+72 verbose etag https://registry.npmjs.org/mongodb from cache
+73 silly registry.get cb [ 304, undefined ]
+74 verbose etag https://registry.npmjs.org/mongoose from cache
+75 silly addNameRange number 2 { name: 'mongodb', range: '*', hasData: true }
+76 silly addNameRange versions [ 'mongodb',
+76 silly addNameRange   [ '0.9.4',
+76 silly addNameRange     '0.9.4-4',
+76 silly addNameRange     '0.9.3',
+76 silly addNameRange     '0.9.1',
+76 silly addNameRange     '0.9.2',
+76 silly addNameRange     '0.9.6-7',
+76 silly addNameRange     '0.9.6-8',
+76 silly addNameRange     '0.9.6-9',
+76 silly addNameRange     '0.9.6-10',
+76 silly addNameRange     '0.9.6-11',
+76 silly addNameRange     '0.9.6-12',
+76 silly addNameRange     '0.9.6-13',
+76 silly addNameRange     '0.9.6-14',
+76 silly addNameRange     '0.9.6-15',
+76 silly addNameRange     '0.9.6-16',
+76 silly addNameRange     '0.9.6-17',
+76 silly addNameRange     '0.9.6-18',
+76 silly addNameRange     '0.9.6-19',
+76 silly addNameRange     '0.9.6-20',
+76 silly addNameRange     '0.9.6-21',
+76 silly addNameRange     '0.9.6-22',
+76 silly addNameRange     '0.9.6-23',
+76 silly addNameRange     '0.9.7',
+76 silly addNameRange     '0.9.7-0',
+76 silly addNameRange     '0.9.7-1',
+76 silly addNameRange     '0.9.7-1.1',
+76 silly addNameRange     '0.9.7-1.2',
+76 silly addNameRange     '0.9.7-1.3',
+76 silly addNameRange     '0.9.7-1.4',
+76 silly addNameRange     '0.9.7-2',
+76 silly addNameRange     '0.9.7-2-1',
+76 silly addNameRange     '0.9.7-2-2',
+76 silly addNameRange     '0.9.7-2-3',
+76 silly addNameRange     '0.9.7-2-4',
+76 silly addNameRange     '0.9.7-2-5',
+76 silly addNameRange     '0.9.7-3',
+76 silly addNameRange     '0.9.7-3-1',
+76 silly addNameRange     '0.9.7-3-2',
+76 silly addNameRange     '0.9.7-3-3',
+76 silly addNameRange     '0.9.7-3-4',
+76 silly addNameRange     '0.9.7-3-5',
+76 silly addNameRange     '0.9.8',
+76 silly addNameRange     '0.9.8-1',
+76 silly addNameRange     '0.9.8-2',
+76 silly addNameRange     '0.9.8-3',
+76 silly addNameRange     '0.9.8-4',
+76 silly addNameRange     '0.9.8-5',
+76 silly addNameRange     '0.9.8-6',
+76 silly addNameRange     '0.9.8-7',
+76 silly addNameRange     '0.9.9',
+76 silly addNameRange     '0.9.9-1',
+76 silly addNameRange     '0.9.9-2',
+76 silly addNameRange     '0.9.9-3',
+76 silly addNameRange     '0.9.9-4',
+76 silly addNameRange     '0.9.9-5',
+76 silly addNameRange     '0.9.9-6',
+76 silly addNameRange     '0.9.9-7',
+76 silly addNameRange     '0.9.9-8',
+76 silly addNameRange     '1.0.0',
+76 silly addNameRange     '1.0.1',
+76 silly addNameRange     '1.0.2',
+76 silly addNameRange     '1.1.0-beta',
+76 silly addNameRange     '1.1.0',
+76 silly addNameRange     '1.1.1',
+76 silly addNameRange     '1.1.2',
+76 silly addNameRange     '1.1.3',
+76 silly addNameRange     '1.1.4',
+76 silly addNameRange     '1.1.5',
+76 silly addNameRange     '1.1.6',
+76 silly addNameRange     '1.1.7',
+76 silly addNameRange     '1.1.8',
+76 silly addNameRange     '1.1.9',
+76 silly addNameRange     '1.1.10',
+76 silly addNameRange     '1.1.11',
+76 silly addNameRange     '1.2.0',
+76 silly addNameRange     '1.2.1',
+76 silly addNameRange     '1.2.2',
+76 silly addNameRange     '1.2.3',
+76 silly addNameRange     '1.2.4',
+76 silly addNameRange     '1.2.5',
+76 silly addNameRange     '1.2.6',
+76 silly addNameRange     '1.2.7',
+76 silly addNameRange     '1.2.8',
+76 silly addNameRange     '1.2.9',
+76 silly addNameRange     '1.2.10',
+76 silly addNameRange     '1.2.11',
+76 silly addNameRange     '1.2.12',
+76 silly addNameRange     '1.2.13',
+76 silly addNameRange     '1.2.14',
+76 silly addNameRange     '1.3.0',
+76 silly addNameRange     '1.3.1',
+76 silly addNameRange     '1.3.2',
+76 silly addNameRange     '1.3.3',
+76 silly addNameRange     '1.3.4',
+76 silly addNameRange     '1.3.5',
+76 silly addNameRange     '1.3.6',
+76 silly addNameRange     '1.3.7',
+76 silly addNameRange     '1.3.8',
+76 silly addNameRange     '1.3.9',
+76 silly addNameRange     '1.3.10',
+76 silly addNameRange     '1.3.11',
+76 silly addNameRange     '1.3.12',
+76 silly addNameRange     '1.3.14',
+76 silly addNameRange     '1.3.15',
+76 silly addNameRange     '1.3.17',
+76 silly addNameRange     '1.3.18',
+76 silly addNameRange     '1.3.19',
+76 silly addNameRange     '1.4.0-rc2',
+76 silly addNameRange     '1.3.20',
+76 silly addNameRange     '1.4.0-rc3',
+76 silly addNameRange     '1.3.21',
+76 silly addNameRange     '1.3.22',
+76 silly addNameRange     '1.3.23',
+76 silly addNameRange     '1.4.0-rc4',
+76 silly addNameRange     '1.4.0-rc5',
+76 silly addNameRange     '1.4.0-rc6',
+76 silly addNameRange     '1.4.0-rc7',
+76 silly addNameRange     '1.4.0-rc8',
+76 silly addNameRange     '1.4.0-rc9',
+76 silly addNameRange     '1.4.0-rc10',
+76 silly addNameRange     '1.4.0',
+76 silly addNameRange     '1.4.1',
+76 silly addNameRange     '1.4.2',
+76 silly addNameRange     '1.4.3',
+76 silly addNameRange     '1.4.4',
+76 silly addNameRange     '1.4.5',
+76 silly addNameRange     '1.4.6',
+76 silly addNameRange     '1.4.7',
+76 silly addNameRange     '1.4.8',
+76 silly addNameRange     '1.4.9',
+76 silly addNameRange     '1.4.10',
+76 silly addNameRange     '2.0.0-alpha1',
+76 silly addNameRange     '1.4.11',
+76 silly addNameRange     '1.4.12',
+76 silly addNameRange     '1.4.14',
+76 silly addNameRange     '1.4.15',
+76 silly addNameRange     '1.4.16',
+76 silly addNameRange     '1.4.17',
+76 silly addNameRange     '2.0.0-alpha2',
+76 silly addNameRange     '1.4.18',
+76 silly addNameRange     '2.0.0',
+76 silly addNameRange     '2.0.1',
+76 silly addNameRange     '2.0.2',
+76 silly addNameRange     '1.4.19',
+76 silly addNameRange     '2.0.3',
+76 silly addNameRange     '2.0.4',
+76 silly addNameRange     '2.0.5' ] ]
+77 verbose addNamed [ 'mongodb', '1.4.19' ]
+78 verbose addNamed [ '1.4.19', '1.4.19' ]
+79 silly lockFile f2af46af-mongodb-1-4-19 mongodb@1.4.19
+80 verbose lock mongodb@1.4.19 C:\Users\460473\AppData\Roaming\npm-cache\f2af46af-mongodb-1-4-19.lock
+81 silly addNameRange number 2 { name: 'mongoose', range: '*', hasData: true }
+82 silly addNameRange versions [ 'mongoose',
+82 silly addNameRange   [ '0.0.1',
+82 silly addNameRange     '0.0.2',
+82 silly addNameRange     '0.0.3',
+82 silly addNameRange     '0.0.4',
+82 silly addNameRange     '0.0.5',
+82 silly addNameRange     '1.0.0',
+82 silly addNameRange     '1.0.1',
+82 silly addNameRange     '1.0.2',
+82 silly addNameRange     '0.0.6',
+82 silly addNameRange     '1.0.3',
+82 silly addNameRange     '1.0.4',
+82 silly addNameRange     '1.0.5',
+82 silly addNameRange     '1.0.6',
+82 silly addNameRange     '1.0.7',
+82 silly addNameRange     '1.0.8',
+82 silly addNameRange     '1.0.10',
+82 silly addNameRange     '1.0.11',
+82 silly addNameRange     '1.0.12',
+82 silly addNameRange     '1.0.13',
+82 silly addNameRange     '1.0.14',
+82 silly addNameRange     '1.0.15',
+82 silly addNameRange     '1.0.16',
+82 silly addNameRange     '1.1.0',
+82 silly addNameRange     '1.1.1',
+82 silly addNameRange     '1.1.2',
+82 silly addNameRange     '1.1.3',
+82 silly addNameRange     '1.1.4',
+82 silly addNameRange     '1.1.5',
+82 silly addNameRange     '1.1.6',
+82 silly addNameRange     '1.1.7',
+82 silly addNameRange     '1.1.8',
+82 silly addNameRange     '1.1.9',
+82 silly addNameRange     '1.1.10',
+82 silly addNameRange     '1.1.11',
+82 silly addNameRange     '1.1.12',
+82 silly addNameRange     '1.1.13',
+82 silly addNameRange     '1.1.14',
+82 silly addNameRange     '1.1.15',
+82 silly addNameRange     '1.1.16',
+82 silly addNameRange     '1.1.17',
+82 silly addNameRange     '1.1.18',
+82 silly addNameRange     '1.1.19',
+82 silly addNameRange     '1.1.20',
+82 silly addNameRange     '1.1.21',
+82 silly addNameRange     '1.1.22',
+82 silly addNameRange     '1.1.23',
+82 silly addNameRange     '1.1.24',
+82 silly addNameRange     '1.1.25',
+82 silly addNameRange     '1.2.0',
+82 silly addNameRange     '1.3.0',
+82 silly addNameRange     '1.3.1',
+82 silly addNameRange     '1.3.2',
+82 silly addNameRange     '1.3.3',
+82 silly addNameRange     '1.3.4',
+82 silly addNameRange     '1.3.5',
+82 silly addNameRange     '1.3.6',
+82 silly addNameRange     '1.3.7',
+82 silly addNameRange     '1.4.0',
+82 silly addNameRange     '1.5.0',
+82 silly addNameRange     '1.6.0',
+82 silly addNameRange     '1.7.2',
+82 silly addNameRange     '1.7.3',
+82 silly addNameRange     '1.7.4',
+82 silly addNameRange     '1.8.0',
+82 silly addNameRange     '1.8.1',
+82 silly addNameRange     '1.8.2',
+82 silly addNameRange     '1.8.3',
+82 silly addNameRange     '1.8.4',
+82 silly addNameRange     '2.0.0',
+82 silly addNameRange     '2.0.1',
+82 silly addNameRange     '2.0.2',
+82 silly addNameRange     '2.0.3',
+82 silly addNameRange     '2.0.4',
+82 silly addNameRange     '2.1.0',
+82 silly addNameRange     '2.1.1',
+82 silly addNameRange     '2.1.2',
+82 silly addNameRange     '2.1.3',
+82 silly addNameRange     '2.1.4',
+82 silly addNameRange     '2.2.0',
+82 silly addNameRange     '2.2.1',
+82 silly addNameRange     '2.2.2',
+82 silly addNameRange     '2.2.3',
+82 silly addNameRange     '2.2.4',
+82 silly addNameRange     '2.3.0',
+82 silly addNameRange     '2.3.1',
+82 silly addNameRange     '2.3.2',
+82 silly addNameRange     '2.3.3',
+82 silly addNameRange     '2.3.4',
+82 silly addNameRange     '2.3.5',
+82 silly addNameRange     '2.3.6',
+82 silly addNameRange     '2.3.7',
+82 silly addNameRange     '2.3.8',
+82 silly addNameRange     '2.3.9',
+82 silly addNameRange     '2.3.10',
+82 silly addNameRange     '2.3.11',
+82 silly addNameRange     '2.3.12',
+82 silly addNameRange     '2.3.13',
+82 silly addNameRange     '2.4.0',
+82 silly addNameRange     '2.4.1',
+82 silly addNameRange     '2.4.2',
+82 silly addNameRange     '2.4.3',
+82 silly addNameRange     '2.4.4',
+82 silly addNameRange     '2.4.5',
+82 silly addNameRange     '2.4.6',
+82 silly addNameRange     '2.4.7',
+82 silly addNameRange     '2.4.8',
+82 silly addNameRange     '2.4.9',
+82 silly addNameRange     '2.4.10',
+82 silly addNameRange     '2.5.0',
+82 silly addNameRange     '2.5.1',
+82 silly addNameRange     '2.5.2',
+82 silly addNameRange     '2.5.3',
+82 silly addNameRange     '2.5.4',
+82 silly addNameRange     '2.5.5',
+82 silly addNameRange     '2.5.6',
+82 silly addNameRange     '2.5.7',
+82 silly addNameRange     '2.5.8',
+82 silly addNameRange     '2.5.9',
+82 silly addNameRange     '2.5.10',
+82 silly addNameRange     '2.5.11',
+82 silly addNameRange     '2.5.12',
+82 silly addNameRange     '2.5.13',
+82 silly addNameRange     '2.5.14',
+82 silly addNameRange     '2.6.0',
+82 silly addNameRange     '2.6.1',
+82 silly addNameRange     '2.6.2',
+82 silly addNameRange     '2.6.3',
+82 silly addNameRange     '2.6.4',
+82 silly addNameRange     '2.6.5',
+82 silly addNameRange     '2.6.6',
+82 silly addNameRange     '2.6.7',
+82 silly addNameRange     '2.6.8',
+82 silly addNameRange     '2.7.0',
+82 silly addNameRange     '2.7.1',
+82 silly addNameRange     '2.7.2',
+82 silly addNameRange     '2.7.4',
+82 silly addNameRange     '2.7.3',
+82 silly addNameRange     '3.0.0',
+82 silly addNameRange     '3.0.1',
+82 silly addNameRange     '3.0.2',
+82 silly addNameRange     '2.8.0',
+82 silly addNameRange     '3.0.3',
+82 silly addNameRange     '3.1.0',
+82 silly addNameRange     '2.8.1',
+82 silly addNameRange     '3.1.1',
+82 silly addNameRange     '2.8.2',
+82 silly addNameRange     '2.8.3',
+82 silly addNameRange     '2.9.0',
+82 silly addNameRange     '3.2.0',
+82 silly addNameRange     '2.9.1',
+82 silly addNameRange     '3.2.1',
+82 silly addNameRange     '2.9.2',
+82 silly addNameRange     '3.2.2',
+82 silly addNameRange     '3.3.0',
+82 silly addNameRange     '3.3.1',
+82 silly addNameRange     '2.9.3',
+82 silly addNameRange     '3.4.0',
+82 silly addNameRange     '2.9.4',
+82 silly addNameRange     '2.9.5',
+82 silly addNameRange     '3.5.0',
+82 silly addNameRange     '3.5.1',
+82 silly addNameRange     '3.5.2',
+82 silly addNameRange     '3.5.3',
+82 silly addNameRange     '2.9.6',
+82 silly addNameRange     '2.9.7',
+82 silly addNameRange     '3.5.4',
+82 silly addNameRange     '3.5.5',
+82 silly addNameRange     '2.9.8',
+82 silly addNameRange     '2.9.9',
+82 silly addNameRange     '3.5.6',
+82 silly addNameRange     '3.5.7',
+82 silly addNameRange     '3.5.8',
+82 silly addNameRange     '2.9.10',
+82 silly addNameRange     '3.5.9',
+82 silly addNameRange     '3.6.2',
+82 silly addNameRange     '3.5.10',
+82 silly addNameRange     '3.6.3',
+82 silly addNameRange     '3.5.11',
+82 silly addNameRange     '3.6.4',
+82 silly addNameRange     '3.6.5',
+82 silly addNameRange     '3.6.6',
+82 silly addNameRange     '3.6.7',
+82 silly addNameRange     '3.5.12',
+82 silly addNameRange     '3.6.8',
+82 silly addNameRange     '3.6.9',
+82 silly addNameRange     '3.6.10',
+82 silly addNameRange     '3.5.13',
+82 silly addNameRange     '3.5.14',
+82 silly addNameRange     '3.6.11',
+82 silly addNameRange     '3.6.12',
+82 silly addNameRange     '3.6.13',
+82 silly addNameRange     '3.6.14',
+82 silly addNameRange     '3.6.15',
+82 silly addNameRange     '3.5.15',
+82 silly addNameRange     '3.7.0',
+82 silly addNameRange     '3.6.16',
+82 silly addNameRange     '3.5.16',
+82 silly addNameRange     '3.6.17',
+82 silly addNameRange     '3.7.2',
+82 silly addNameRange     '3.0.0-alpha1',
+82 silly addNameRange     '3.0.0-alpha2',
+82 silly addNameRange     '3.0.0-rc0',
+82 silly addNameRange     '3.6.0-rc0',
+82 silly addNameRange     '3.6.0-rc1',
+82 silly addNameRange     '3.6.18',
+82 silly addNameRange     '3.7.3',
+82 silly addNameRange     '3.6.19',
+82 silly addNameRange     '3.6.20',
+82 silly addNameRange     '3.7.4',
+82 silly addNameRange     '3.8.0',
+82 silly addNameRange     '3.8.1',
+82 silly addNameRange     '3.8.2',
+82 silly addNameRange     '3.8.3',
+82 silly addNameRange     '3.8.4',
+82 silly addNameRange     '3.8.5',
+82 silly addNameRange     '3.8.6',
+82 silly addNameRange     '3.8.7',
+82 silly addNameRange     '3.8.8',
+82 silly addNameRange     '3.8.9',
+82 silly addNameRange     '3.8.10',
+82 silly addNameRange     '3.8.11',
+82 silly addNameRange     '3.9.0',
+82 silly addNameRange     '3.8.12',
+82 silly addNameRange     '3.8.13',
+82 silly addNameRange     '3.8.14',
+82 silly addNameRange     '3.8.15',
+82 silly addNameRange     '3.9.1',
+82 silly addNameRange     '3.8.16',
+82 silly addNameRange     '3.9.2',
+82 silly addNameRange     '3.8.17',
+82 silly addNameRange     '3.9.3',
+82 silly addNameRange     '3.8.18',
+82 silly addNameRange     '3.9.4',
+82 silly addNameRange     '3.8.19',
+82 silly addNameRange     '3.9.5' ] ]
+83 verbose addNamed [ 'mongoose', '3.8.19' ]
+84 verbose addNamed [ '3.8.19', '3.8.19' ]
+85 silly lockFile 32b89ef2-mongoose-3-8-19 mongoose@3.8.19
+86 verbose lock mongoose@3.8.19 C:\Users\460473\AppData\Roaming\npm-cache\32b89ef2-mongoose-3-8-19.lock
+87 silly lockFile 56fc26b9-s-org-mongodb-mongodb-1-4-19-tgz https://registry.npmjs.org/mongodb/-/mongodb-1.4.19.tgz
+88 verbose lock https://registry.npmjs.org/mongodb/-/mongodb-1.4.19.tgz C:\Users\460473\AppData\Roaming\npm-cache\56fc26b9-s-org-mongodb-mongodb-1-4-19-tgz.lock
+89 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongodb/-/mongodb-1.4.19.tgz',
+89 verbose addRemoteTarball   'dbb47f1899c205b00bfb746db0ed002408b0af71' ]
+90 info retry fetch attempt 1 at 17:22:39
+91 verbose fetch to= C:\Users\460473\AppData\Local\Temp\npm-41504-zaX9XT3b\registry.npmjs.org\mongodb\-\mongodb-1.4.19.tgz
+92 http GET https://registry.npmjs.org/mongodb/-/mongodb-1.4.19.tgz
+93 silly lockFile 32b89ef2-mongoose-3-8-19 mongoose@3.8.19
+94 silly lockFile 32b89ef2-mongoose-3-8-19 mongoose@3.8.19
+95 silly lockFile e0858070-mongoose mongoose@*
+96 silly lockFile e0858070-mongoose mongoose@*
+97 error fetch failed https://registry.npmjs.org/mongodb/-/mongodb-1.4.19.tgz
+98 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+99 info retry fetch attempt 2 at 17:22:49
+100 verbose fetch to= C:\Users\460473\AppData\Local\Temp\npm-41504-zaX9XT3b\registry.npmjs.org\mongodb\-\mongodb-1.4.19.tgz
+101 http GET https://registry.npmjs.org/mongodb/-/mongodb-1.4.19.tgz
+102 error fetch failed https://registry.npmjs.org/mongodb/-/mongodb-1.4.19.tgz
+103 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+104 info retry fetch attempt 3 at 17:23:49
+105 verbose fetch to= C:\Users\460473\AppData\Local\Temp\npm-41504-zaX9XT3b\registry.npmjs.org\mongodb\-\mongodb-1.4.19.tgz
+106 http GET https://registry.npmjs.org/mongodb/-/mongodb-1.4.19.tgz
+107 error fetch failed https://registry.npmjs.org/mongodb/-/mongodb-1.4.19.tgz
+108 silly lockFile 56fc26b9-s-org-mongodb-mongodb-1-4-19-tgz https://registry.npmjs.org/mongodb/-/mongodb-1.4.19.tgz
+109 silly lockFile 56fc26b9-s-org-mongodb-mongodb-1-4-19-tgz https://registry.npmjs.org/mongodb/-/mongodb-1.4.19.tgz
+110 silly lockFile f2af46af-mongodb-1-4-19 mongodb@1.4.19
+111 silly lockFile f2af46af-mongodb-1-4-19 mongodb@1.4.19
+112 silly lockFile 842f93d5-mongodb mongodb@*
+113 silly lockFile 842f93d5-mongodb mongodb@*
+114 error network tunneling socket could not be established, cause=Parse Error
+114 error network This is most likely not a problem with npm itself
+114 error network and is related to network connectivity.
+114 error network In most cases you are behind a proxy or have bad network settings.
+114 error network
+114 error network If you are behind a proxy, please make sure that the
+114 error network 'proxy' config is set properly.  See: 'npm help config'
+115 error System Windows_NT 6.1.7601
+116 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+117 error cwd C:\Users\460473\WebstormProjects\SampleApp
+118 error node -v v0.10.32
+119 error npm -v 1.4.28
+120 error code ECONNRESET
+121 verbose exit [ 1, true ]
